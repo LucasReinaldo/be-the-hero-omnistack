@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Shadows+Into+Light&family=Dancing+Script:wght@600&family=Heebo:wght@300;400;500;700&family=Liu+Jian+Mao+Cao&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%;
+    background-color: #afe8fa;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+    /* font: 400 18px 'Heebo', sans-serif, sans-serif; */
+    /* font: 400 18px 'Dancing Script', cursive; */
+    /* font: 400 18px 'Shadows Into Light', cursive; */
+    /* font: 400 18px 'Roboto', sans-serif; */
+    font: 18px 'Baloo Da 2', cursive, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+form input {
+    border-radius: 8px;
+    border: 1px solid #dcdce6;
+    color: #333;
+    height: 60px;
+    padding: 0 24px;
+    width: 100%;
+}
+
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #dcdce6;
+    color: #333;
+    line-height: 21px;
+    min-height: 140px;
+    padding: 16px 24px;
+    resize: vertical;
+    width: 100%;
+}
+
+.button {
+    background-color: #e02041;
+    border-radius: 8px;
+    border: 0;
+    color: #FFF;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.2s;
+    width: 100%;
+}
+
+.button:hover {
+    filter: brightness(95%);
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.back-link svg {
+    margin-right: 8px;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
