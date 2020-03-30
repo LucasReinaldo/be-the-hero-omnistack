@@ -39,6 +39,12 @@ const NewIncident = () => {
         
     }
 
+    const handleButtonCancel = () => {
+        setTitle("");
+        setDescription("")
+        setValue("");
+    }
+
     return (
         <div className="new-incident-container">
             <div className="content">
@@ -63,8 +69,10 @@ const NewIncident = () => {
                         value={value} 
                         onChange={e => setValue(e.target.value)}
                     />
-                    <button className="button" type="submit">Cancel</button>
-                    <button className="button" type="submit">Register</button>
+                    <div className="button-group">
+                        <button className="button" type="submit">Register</button>
+                        <button onClick={handleButtonCancel} className="button-cancel" type="reset">Cancel</button>
+                    </div>
                 </form>
             </div>
         </div>
